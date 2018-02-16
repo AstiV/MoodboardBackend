@@ -1,6 +1,0 @@
-development:
-  adapter: postgresql
-  database: development
-  username: Asti
-  password: Ganja85
-  host: localhost

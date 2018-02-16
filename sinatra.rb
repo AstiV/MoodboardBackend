@@ -1,10 +1,8 @@
 require 'sinatra'
-require 'sinatra/activerecord'
-require './config/environments' #database configuration
   
 $moodsum = 0
 
-  get '/' do
+  get '/' do 
     %{
     <form method="post">
     <input type="radio" name="mood" value= 1> very bad<br>
