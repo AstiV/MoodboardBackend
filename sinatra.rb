@@ -1,4 +1,6 @@
 require 'sinatra'
+require 'sequel'
+require './config/environments' #database configuration
 
 $moodsum = 0
 
@@ -12,4 +14,3 @@ post '/' do
   puts $moodsum
   "Thank you!"
 end
- 
