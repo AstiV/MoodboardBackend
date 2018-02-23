@@ -14,4 +14,5 @@ post '/' do
   $moodsum = $moodsum + params["mood"].to_i
   puts $moodsum
   "Thank you!"
+  <div style="padding-top:90px;"><%= $moodsum %></div>
 end
