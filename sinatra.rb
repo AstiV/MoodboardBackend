@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sequel'
 require 'pg'
 require './config/environments' #database configuration
+require "sinatra/reloader
 
 $moodsum = 0
 
@@ -12,7 +13,9 @@ end
 post '/' do
   puts params
   $moodsum = $moodsum + params["mood"].to_i
-  puts $moodsum
+  #puts $moodsum
   "Thank you!"
-  <div style="padding-top:90px;"><%= $moodsum %></div>
+  <pre>
+  <%= @article_votes.inspect %>
+	</pre>
 end
