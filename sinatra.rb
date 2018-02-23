@@ -13,6 +13,6 @@ end
 post '/' do
   puts params
   $moodsum = $moodsum + params["mood"].to_i
-  #puts $moodsum
+  puts $moodsum
   "Thank you!"
 end
