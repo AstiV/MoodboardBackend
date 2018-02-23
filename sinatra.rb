@@ -14,6 +14,6 @@ post '/' do
   $moodsum = $moodsum + params["mood"].to_i
 end
 
-get '/' do
+get '/$moodsum' do
 	erb :result
 end
