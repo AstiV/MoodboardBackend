@@ -12,6 +12,5 @@ end
 post '/' do
   puts params
   $moodsum = $moodsum + params["mood"].to_i
-  puts $moodsum
-  "Thank you!"
+  erb :result
 end
