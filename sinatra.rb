@@ -2,7 +2,6 @@ require 'sinatra'
 require 'sequel'
 require 'pg'
 require './config/environments' #database configuration
-require 'sinatra/reloader'
 
 $moodsum = 0
 
