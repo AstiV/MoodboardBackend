@@ -1,9 +1,9 @@
 require 'sinatra'
 require 'sequel'
 require 'pg'
-#require './config/environments' #database configuration
+require './config/environments' #database configuration
 #DB = Sequel.connect('postgres://david:david@localhost/moodsdatabase')
-DB = Sequel.postgres('moodsdatabase',:user=>'david',:password=>'david',:host=>'localhost',:port=>5432,:max_connections=>10)
+#DB = Sequel.postgres('moodsdatabase',:user=>'david',:password=>'david',:host=>'localhost',:port=>5432,:max_connections=>10)
 $moodsum = 0
 #moods = DB[:moodsdatabase]
 
