@@ -1,4 +1,4 @@
 <% if $moodsum %>
 	<h1> The overall mood is:<%= DB[:moodsdata].sum(:value) %></h1>
-	<h1> The average mood is:<%= DB[:moodsdata].avg(:value) %></h1>
+	<h1> The average mood is:<%= DB[:moodsdata].sum(:value) / DB[:moodsdata].sum(:value_id) %></h1>
 <% end %>
