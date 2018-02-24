@@ -1,7 +1,7 @@
-development:
-  adapter: postgresql
-  database: Moods
-  username: <%= ENV['PG_USER'] %>
-  password: <%= ENV['PG_PASS'] %>
-  host: localhost
+#development:
+#  adapter: postgresql
+#  database: Moods
+#  username: david
+#  password: david
+#  host: localhost
   
