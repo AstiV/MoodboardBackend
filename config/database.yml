@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   database: moodsdatabase
-  username:
-  password:
+  username: david
+  password: david
   host: localhost
   
