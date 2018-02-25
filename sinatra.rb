@@ -8,7 +8,7 @@ get '/' do
 end
 
 post '/' do
-  puts params
+  #puts params
   DB[:moodsdata].insert(value: params["mood"].to_i)
   erb :result
 end
