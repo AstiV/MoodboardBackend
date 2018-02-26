@@ -1,4 +1,6 @@
-<% if true %>
+<% if true
+ %>
 	<h1> The overall mood is:<%= DB[:moodsdata].sum(:value) %></h1>
-	<h1> The overall mood is:<%= DB[:moodsdata].avg(:value) %></h1>
+	<h1> The average mood is:<%= x = DB[:moodsdata].avg(:value) 
+	"%.2f" % x %></h1>
 <% end %>
