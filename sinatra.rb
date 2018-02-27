@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sequel'
 require 'pg'
 require './config/environments' #database configuration
-require './models/model' #Mood class
+#require './models/model' #Mood class
 
 get '/' do 
   erb :index
