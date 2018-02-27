@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sequel'
 require 'pg'
 require './config/environments' #database configuration
+require './models/model' #Mood class
 
 $moodsum = 0
 
